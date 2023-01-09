@@ -1,5 +1,6 @@
 {
   "name": "fuel-ecosystem",
+  "author": "0xYami",
   "type": "module",
   "version": "0.0.0",
   "private": true,
