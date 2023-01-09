@@ -3,6 +3,7 @@ export const domains = [
   "Bridge",
   "DAO",
   "DeFi",
+  "GameFi",
   "Identity",
   "Marketplace",
   "NFT",

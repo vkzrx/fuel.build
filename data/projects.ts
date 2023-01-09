@@ -98,6 +98,25 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "PlayEstates",
+    description:
+      "Real Estate Tokenization and Fractionalization! Bridging the digital world to the real world. Powered by Fuel Network",
+    href: "https://www.playestates.com",
+    logoURL: "/logos/playestates.jpg",
+    coverURL: "/covers/playestates.jpg",
+    domains: ["Marketplace", "GameFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/playestates",
+      },
+      {
+        type: "website",
+        link: "https://www.playestates.com",
+      },
+    ],
+  },
+  {
     name: "Webgum",
     description:
       "🕸️ An online marketplace where you can buy and sell encrypted files",
