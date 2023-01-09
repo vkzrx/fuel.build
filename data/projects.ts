@@ -117,6 +117,29 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "SwayLang",
+    description:
+      "Sway is a Rust-based, domain specific language for writing smart contracts 🌴 Created by @fuellabs_",
+    href: "https://fuellabs.github.io/sway",
+    logoURL: "/logos/swaylang.jpeg",
+    coverURL: "/covers/swaylang.jpeg",
+    domains: ["Tooling"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/SwayLang",
+      },
+      {
+        type: "github",
+        link: "https://github.com/FuelLabs/sway",
+      },
+      {
+        type: "website",
+        link: "https://fuellabs.github.io/sway",
+      },
+    ],
+  },
+  {
     name: "Webgum",
     description:
       "🕸️ An online marketplace where you can buy and sell encrypted files",
