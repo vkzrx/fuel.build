@@ -1,0 +1,60 @@
+---
+import Card from "~/components/Card.astro";
+import { projects } from "~/../data/projects";
+import MainLayout from "~/layouts/MainLayout.astro";
+import { domains } from "~/types";
+
+export function getStaticPaths() {
+  return domains.map((domain) => ({
+    params: { domain: domain.toLowerCase() },
+  }));
+}
+
+const { domain } = Astro.params;
+
+const isEmpty = projects.find((project) => {
+  return (
+    domain !== "all" &&
+    !project.domains.find((dom) => dom.toLowerCase() === domain?.toLowerCase())
+  );
+});
+---
+
+<MainLayout>
+  <div class="flex-grow space-y-2">
+    {
+      isEmpty ? (
+        <div class="flex h-full flex-col items-center justify-center text-2xl text-neutral-500">
+          <img src="/logos/sparky.svg" alt="sparky-empty" class="w-44" />
+          <span>We need to fuel up Sparky</span>
+        </div>
+      ) : (
+        <>
+          <div class="hidden text-right text-neutral-400 md:inline">
+            Search project
+          </div>
+          <ul class="flex justify-center md:grid md:grid-cols-3 md:gap-4">
+            {projects.map((project) => {
+              if (isEmpty) return null;
+              return (
+                <li>
+                  <Card
+                    title={project.name}
+                    description={project.description}
+                    href={project.href}
+                    domains={project.domains}
+                    logoURL={project.logoURL}
+                    coverURL={project.coverURL}
+                    socials={project.socials.sort((x, y) =>
+                      x.type > y.type ? 1 : -1,
+                    )}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )
+    }
+  </div>
+</MainLayout>

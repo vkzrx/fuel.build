@@ -1,0 +1,43 @@
+---
+import { domains } from "~/types";
+import type { Domain } from "~/types";
+import { projects } from "~/../data/projects";
+import Link from "./Link.astro";
+
+const getTotalProjectOfDomain = (domain: Domain) => {
+  if (domain === "All") return projects.length;
+  return projects.reduce((prev, cur) => {
+    return cur.domains.includes(domain) ? prev + 1 : prev;
+  }, 0);
+};
+
+const { pathname } = Astro.url;
+---
+
+<div class="hidden w-[200px] max-w-[200px] space-y-2 md:block">
+  <span class="text-neutral-400">Domains</span>
+  <ul class="space-y-2">
+    {
+      domains.map((domain) => (
+        <li>
+          <Link
+            href={`/domain/${domain.toLowerCase()}`}
+            class:list={[
+              "flex w-full justify-between px-4 py-1 text-left",
+              "rounded-lg border-[0.1px] border-teal-200/20",
+              "hover:bg-teal-700/20",
+              {
+                "bg-teal-700/20":
+                  pathname === `/domain/${domain.toLowerCase()}` ||
+                  (pathname === "/" && domain === "All"),
+              },
+            ]}
+          >
+            <span>{domain}</span>
+            <span>{getTotalProjectOfDomain(domain)}</span>
+          </Link>
+        </li>
+      ))
+    }
+  </ul>
+</div>

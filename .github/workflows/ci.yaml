@@ -12,6 +12,32 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  astro:
+    name: Check for code issues with Astro
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Tools & Dependencies
+        uses: ./.github/actions/install
+
+      - name: Run Check
+        run: pnpm run check:astro
+
+  typescript:
+    name: Check for code issues with TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Tools & Dependencies
+        uses: ./.github/actions/install
+
+      - name: Run Check
+        run: pnpm run check:typescript
+
   eslint:
     name: Check for code issues with ESLint
     runs-on: ubuntu-latest

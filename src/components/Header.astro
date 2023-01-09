@@ -1,0 +1,49 @@
+---
+const { pathname } = Astro.url;
+---
+
+<header class="z-10 w-full bg-[#000d0a]">
+  <nav
+    class="flex h-[60px] items-center justify-center md:justify-between md:px-32 2xl:px-44"
+  >
+    <img src="/favicon.svg" alt="logo" class="h-[50px] w-[50px]" />
+    <ul class="hidden space-x-6 md:flex">
+      <li>
+        <a
+          href="/"
+          class:list={[
+            "text-lg",
+            {
+              "text-teal-200":
+                pathname === "/" || pathname.startsWith("/domain"),
+            },
+          ]}>Ecosystem</a
+        >
+      </li>
+      <li class="flex items-center space-x-1">
+        <a
+          href="/"
+          class:list={[
+            "text-lg text-gray-500 pointer-events-none",
+            { "text-teal-200": pathname === "/jobs" },
+          ]}>Jobs</a
+        >
+        <div
+          class:list={[
+            "px-1.5 py-0.5 text-center text-xs text-neutral-200",
+            "rounded border-[0.1px] border-teal-200/20",
+            "hover:duration-400 hover:bg-teal-200/10",
+          ]}
+        >
+          Coming soon
+        </div>
+      </li>
+      <li>
+        <a
+          href="https://github.com/0xYami/fuel.build/tree/main/docs/fill-up-gas-station.md"
+          class="text-lg">Join</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

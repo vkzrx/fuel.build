@@ -1,0 +1,63 @@
+---
+import Link from "./Link.astro";
+import { socials } from "~/constants";
+---
+
+<footer
+  class="mt-8 flex items-center justify-center border-t-[0.1px] border-teal-200/20 py-4 md:justify-between md:px-32 2xl:px-44"
+>
+  <div class="flex items-end">
+    Made with <img src="/logos/sparky.svg" alt="sparky-footer" /> by&nbsp;<Link
+      external
+      href={socials.yumi.twitter}
+      class="text-teal-200"
+    >
+      0xYumi
+    </Link>&nbsp;&&nbsp;<Link
+      external
+      href={socials.yami.twitter}
+      class="text-teal-200"
+    >
+      0xYami
+    </Link>
+  </div>
+  <div class="hidden items-center md:flex">
+    Learn more about&nbsp;
+    <span class="text-teal-200">Fuel</span>
+    <ul class="ml-2 flex space-x-2">
+      <li
+        class:list={[
+          "p-1",
+          "rounded-full border-[0.1px] border-teal-200/20",
+          "hover:duration-400 hover:bg-teal-200/10",
+        ]}
+      >
+        <Link external href={socials.fuellabs.twitter}>
+          <img src="/icons/twitter.svg" />
+        </Link>
+      </li>
+      <Link external href={socials.fuellabs.discord}>
+        <li
+          class:list={[
+            "p-1",
+            "rounded-full border-[0.1px] border-teal-200/20",
+            "hover:duration-400 hover:bg-teal-200/10",
+          ]}
+        >
+          <img src="/icons/discord.svg" />
+        </li>
+      </Link>
+      <Link external href={socials.fuellabs.website}>
+        <li
+          class:list={[
+            "p-1",
+            "rounded-full border-[0.1px] border-teal-200/20",
+            "hover:duration-400 hover:bg-teal-200/10",
+          ]}
+        >
+          <img src="/icons/globe.svg" />
+        </li>
+      </Link>
+    </ul>
+  </div>
+</footer>
