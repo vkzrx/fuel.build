@@ -12,12 +12,15 @@ export function getStaticPaths() {
 
 const { domain } = Astro.params;
 
-const isEmpty = projects.find((project) => {
-  return (
-    domain !== "all" &&
-    !project.domains.find((dom) => dom.toLowerCase() === domain?.toLowerCase())
-  );
-});
+const isEmpty =
+  projects
+    .map((project) => {
+      if (domain === "all") return true;
+      return project.domains.find(
+        (dom) => dom.toLowerCase() === domain?.toLowerCase(),
+      );
+    })
+    .flatMap((project) => (project ? [project] : [])).length === 0;
 ---
 
 <MainLayout>
@@ -33,9 +36,16 @@ const isEmpty = projects.find((project) => {
           <div class="hidden text-right text-neutral-400 md:block">
             Search project
           </div>
-          <ul class="flex justify-center md:grid md:grid-cols-3 md:gap-4">
+          <ul class="flex h-full justify-center pb-4 md:grid md:grid-cols-3 md:gap-4 2xl:grid-cols-4">
             {projects.map((project) => {
-              if (isEmpty) return null;
+              if (
+                domain !== "all" &&
+                !project.domains.find(
+                  (dom) => dom.toLowerCase() === domain?.toLowerCase(),
+                )
+              ) {
+                return null;
+              }
               return (
                 <li>
                   <Card

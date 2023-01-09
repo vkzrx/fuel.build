@@ -28,7 +28,7 @@ const { pathname } = Astro.url;
               "hover:bg-teal-700/20",
               {
                 "bg-teal-700/20":
-                  pathname === `/domain/${domain.toLowerCase()}` ||
+                  pathname.includes(`/domain/${domain.toLowerCase()}`) ||
                   (pathname === "/" && domain === "All"),
               },
             ]}
