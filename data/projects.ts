@@ -243,4 +243,19 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    name: "Fuel Global",
+    description:
+      "Explore #Fuel Ecosystem with us. News, Guides & Featured Projects on @fuellabs_",
+    href: "https://twitter.com/FuelGlobal_",
+    logoURL: "/logos/fuel-global.jpeg",
+    coverURL: "/covers/fuel-global.jpeg",
+    domains: ["NFT", "Marketplace"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/FuelGlobal_",
+      },
+    ],
+  },
 ];
