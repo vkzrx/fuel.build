@@ -6,6 +6,7 @@ export const domains = [
   "GameFi",
   "Identity",
   "Marketplace",
+  "Education",
   "NFT",
   "Tooling",
   "Wallet",

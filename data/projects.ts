@@ -250,7 +250,7 @@ export const projects: Project[] = [
     href: "https://twitter.com/FuelGlobal_",
     logoURL: "/logos/fuel-global.jpeg",
     coverURL: "/covers/fuel-global.jpeg",
-    domains: ["NFT", "Marketplace"],
+    domains: ["Education"],
     socials: [
       {
         type: "twitter",
