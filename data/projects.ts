@@ -21,6 +21,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Sway Gang",
+    description: "We build on Sway. @fuellabs and @CelestiaOrg early adopters",
+    href: "https://twitter.com/swaygangsters",
+    logoURL: "/logos/sway-gang.jpeg",
+    coverURL: "/covers/sway-gang.jpeg",
+    domains: ["Tooling"],
+    socials: [
+      {
+        type: "twitter",
+        link: "",
+      },
+    ],
+  },
+  {
     name: "Yama Finance",
     description: "Novel Omnichain Stablecoin",
     href: "https://twitter.com/YamaFinance",
