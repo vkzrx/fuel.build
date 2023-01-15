@@ -58,10 +58,17 @@ import Header from "~/components/Header.astro";
   </head>
   <body>
     <Header />
-    <slot />
+    <div
+      class="h-[1px] bg-gradient-to-r from-[#000d0a] via-teal-200 to-[#000d0a]"
+    >
+    </div>
+    <main class="md:px-32 2xl:px-44">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
+
 <style is:global>
   html {
     font-family: system-ui, sans-serif;

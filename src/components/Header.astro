@@ -25,22 +25,15 @@ const { pathname } = Astro.url;
             >
           </li>
           <li class="flex items-center space-x-1">
-            <a
-              href="/"
+            <Link
+              href="/resources/videos"
               class:list={[
-                "text-lg text-gray-500 pointer-events-none",
-                { "text-teal-200": pathname === "/jobs" },
-              ]}>Jobs</a
-            >
-            <div
-              class:list={[
-                "px-1.5 py-0.5 text-center text-xs text-neutral-200",
-                "rounded border-[0.1px] border-teal-200/20",
-                "hover:duration-400 hover:bg-teal-200/10",
+                "text-lg",
+                { "text-teal-200": pathname.startsWith("/resources") },
               ]}
             >
-              Coming soon
-            </div>
+              Resources
+            </Link>
           </li>
           <li>
             <Link

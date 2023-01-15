@@ -4,28 +4,22 @@ import BaseLayout from "./BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div
-    class="h-[1px] bg-gradient-to-r from-[#000d0a] via-teal-200 to-[#000d0a]"
+  <section
+    class="flex h-96 flex-col items-center justify-center space-y-4 bg-hero bg-top bg-no-repeat text-center"
   >
-  </div>
-  <main class="md:px-32 2xl:px-44">
-    <section
-      class="flex h-96 flex-col items-center justify-center space-y-4 bg-hero bg-top bg-no-repeat text-center"
-    >
-      <h1 class="flex items-end justify-center text-4xl md:text-6xl">
-        Fuel <img
-          src="/logos/sparky.svg"
-          alt="sparky"
-          class="mx-2 h-[50px] w-[50px] md:h-[72px] md:w-[72px]"
-        /> your ambitions
-      </h1>
-      <p class="max-w-lg text-2xl text-neutral-400">
-        Explore and join the world's fastest modular execution layer ecosystem
-      </p>
-    </section>
-    <section class="flex md:space-x-4 2xl:space-x-10">
-      <Sidebar />
-      <slot />
-    </section>
-  </main>
+    <h1 class="flex items-end justify-center text-4xl md:text-6xl">
+      Fuel <img
+        src="/logos/sparky.svg"
+        alt="sparky"
+        class="mx-2 h-[50px] w-[50px] md:h-[72px] md:w-[72px]"
+      /> your ambitions
+    </h1>
+    <p class="max-w-lg text-2xl text-neutral-400">
+      Explore and join the world's fastest modular execution layer ecosystem
+    </p>
+  </section>
+  <section class="flex md:space-x-4 2xl:space-x-10">
+    <Sidebar />
+    <slot />
+  </section>
 </BaseLayout>
