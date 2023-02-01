@@ -26,11 +26,67 @@ export const projects: Project[] = [
     href: "https://twitter.com/swaygangsters",
     logoURL: "/logos/sway-gang.jpeg",
     coverURL: "/covers/sway-gang.jpeg",
-    domains: ["Tooling"],
+    domains: ["DeFi", "Tooling"],
     socials: [
       {
         type: "twitter",
-        link: "",
+        link: "https://twitter.com/swaygangsters",
+      },
+      {
+        type: "github",
+        link: "https://github.com/sway-gang",
+      },
+    ],
+  },
+  {
+    name: "RedStone",
+    description:
+      "EVM compatible Oracles offering custom, high-frequency, cost-efficient data for DeFi 🔮 | Creators of @warp_contracts on Arweave 🐘",
+    href: "https://redstone.finance",
+    logoURL: "/logos/redstone-finance.png",
+    coverURL: "/covers/redstone-finance.jpeg",
+    domains: ["Oracle"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/redstone_defi",
+      },
+      {
+        type: "website",
+        link: "https://redstone.finance",
+      },
+      {
+        type: "github",
+        link: "https://github.com/redstone-finance",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/PVxBZKFr46",
+      },
+      {
+        type: "telegram",
+        link: "https://t.me/redstonefinance",
+      },
+    ],
+  },
+  {
+    name: "SwayLend",
+    description: "First ever Lending protocol on Fuel Network",
+    href: "https://swaylend.com",
+    logoURL: "/logos/sway-lend.png",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/swaygangsters",
+      },
+      {
+        type: "github",
+        link: "https://github.com/sway-gang/sway-lend",
+      },
+      {
+        type: "website",
+        link: "https://swaylend.com",
       },
     ],
   },
@@ -245,7 +301,7 @@ export const projects: Project[] = [
     description: "Oracle service for custom data feeds",
     href: "https://orao.network/",
     logoURL: "/logos/orao.jpeg",
-    domains: ["NFT", "Marketplace"],
+    domains: ["Oracle"],
     socials: [
       {
         type: "twitter",
