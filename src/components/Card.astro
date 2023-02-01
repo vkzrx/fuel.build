@@ -48,9 +48,11 @@ const socialIcons: Record<Social["type"], string> = {
           )
         }
       </div>
-      <div class="absolute bottom-0 flex items-center space-x-4 px-4 h-[80px] w-full">
+      <div
+        class="absolute bottom-0 flex h-[80px] w-full items-center space-x-4 px-4"
+      >
         <Avatar img={logoURL} alt={`avatar-${title}`} />
-        <span class="pt-4 text-xl w-full">
+        <span class="w-full pt-4 text-xl">
           {title}
         </span>
       </div>
