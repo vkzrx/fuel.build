@@ -1,6 +1,6 @@
-## Fuel.build
+# Fuel.build
 
-![hello](./public/covers/sparky.png)
+![sparky](./public/covers/sparky.png)
 
 ![version](https://img.shields.io/github/package-json/v/0xYami/fuel.build)
 ![License](https://img.shields.io/github/license/0xYami/fuel.build.svg)
@@ -9,7 +9,7 @@
 
 Go beyond monolithic and explore projects building on [Fuel](https://www.fuel.network/).
 
-### Contribute
+## Contributing
 
 We'll need [pnpm](https://pnpm.io/) installed on our local machine. Follow the instructions [here](https://pnpm.io/installation) then install dependencies.
 
@@ -17,4 +17,20 @@ We'll need [pnpm](https://pnpm.io/) installed on our local machine. Follow the i
 $ pnpm install
 ```
 
-Then to add your project, please follow the documentation [`docs/fill-up-gas-station.md`](./docs/fill-up-gas-station.md)
+Then you can launch the app
+
+```sh
+$ pnpm run dev
+```
+
+To verify if everything is alright, simply run the following command
+
+```sh
+$ pnpm run ci
+```
+
+To add your project, please follow this documentation [`docs/fill-up-gas-station.md`](./docs/fill-up-gas-station.md)
+
+## License
+
+This repository is [MIT licensed](./LICENSE)
