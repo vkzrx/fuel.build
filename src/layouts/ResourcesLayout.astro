@@ -1,0 +1,42 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Link from "~/components/Link.astro";
+
+const { pathname } = Astro.url;
+---
+
+<BaseLayout>
+  <div class="my-6 flex items-end justify-between">
+    <div class="flex flex-col space-y-2">
+      <h1 class="text-3xl">Resources</h1>
+      <span class="text-neutral-400"
+        >Explore articles and videos about Fuel</span
+      >
+    </div>
+    <div class="flex space-x-2">
+      <Link
+        href={`/articles/1`}
+        class:list={[
+          "rounded-md border-[0.1px] border-teal-200/20 px-2 py-1 text-center text-sm capitalize",
+          {
+            "bg-teal-600": pathname.startsWith("/articles"),
+          },
+        ]}
+      >
+        articles
+      </Link>
+      <Link
+        href={`/videos/1`}
+        class:list={[
+          "rounded-md border-[0.1px] border-teal-200/20 px-2 py-1 text-center text-sm capitalize",
+          {
+            "bg-teal-600": pathname.startsWith("/videos"),
+          },
+        ]}
+      >
+        videos
+      </Link>
+    </div>
+  </div>
+  <slot />
+</BaseLayout>

@@ -1,0 +1,68 @@
+---
+import Link from "~/components/Link.astro";
+
+export type Props = {
+  previous: string;
+  next: string;
+  pathname: string;
+  currentPage: number;
+  totalPages: number;
+};
+
+const props = Astro.props;
+
+const previousIsPossible = props.previous !== undefined;
+const nextIsPossible = props.next !== undefined;
+---
+
+<div class="mt-8 flex justify-end space-x-2">
+  <div class="flex rounded-lg border-[0.1px] border-teal-200/20">
+    <Link
+      href={props.previous}
+      class:list={[
+        "flex items-center px-3 py-1 space-x-2 text-sm",
+        "border-r-[0.1px] border-teal-200/30 rounded-l-lg",
+        {
+          "hover:bg-teal-200/20 hover:duration-100": previousIsPossible,
+        },
+        {
+          "bg-zinc-700/70 text-zinc-400": !previousIsPossible,
+        },
+      ]}
+    >
+      <img src="/icons/chevron-left.svg" />
+      <span>Previous</span>
+    </Link>
+    {
+      Array.from(Array(props.totalPages).keys()).map((_, index) => (
+        <Link
+          href={`${props.pathname}/${index + 1}`}
+          class:list={[
+            "flex px-4 py-2 text-sm cursor-pointer",
+            "border-r-[0.1px] border-teal-200/30",
+            "hover:bg-teal-200/20 hover:duration-100",
+            {
+              "bg-teal-200/20": props.currentPage === index + 1,
+            },
+          ]}
+        >
+          {index + 1}
+        </Link>
+      ))
+    }
+    <Link
+      href={props.next}
+      class:list={[
+        "flex items-center px-3 py-1 space-x-2 text-sm",
+        "border-r-[0.1px] border-teal-200/30 rounded-r-lg",
+        { "hover:bg-teal-200/20 hover:duration-100": nextIsPossible },
+        {
+          "bg-zinc-700/70 text-zinc-400": !nextIsPossible,
+        },
+      ]}
+    >
+      <span>Next</span>
+      <img src="/icons/chevron-right.svg" />
+    </Link>
+  </div>
+</div>

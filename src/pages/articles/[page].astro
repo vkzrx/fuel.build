@@ -1,0 +1,60 @@
+---
+import type { GetStaticPathsOptions } from "astro";
+import type { Asset } from "contentful";
+import Link from "~/components/Link.astro";
+import Pagination from "~/components/Pagination.astro";
+import ResourcesLayout from "~/layouts/ResourcesLayout.astro";
+import contentfulClient from "~/lib/contentful";
+
+export const pageSize = 12;
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  let { items } = await contentfulClient.getAssets();
+
+  const articles = items.filter(
+    ({ fields: { description } }) =>
+      description.includes("medium") || description.includes("ghost"),
+  );
+
+  return paginate(articles, { pageSize });
+}
+
+const { page } = Astro.props;
+const totalPages = Math.ceil(page.total / pageSize);
+---
+
+<ResourcesLayout>
+  <ul
+    class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5"
+  >
+    {
+      page.data.map((asset: Asset) => (
+        <li
+          class:list={[
+            "mx-auto duration-400 flex max-w-[280px] flex-col justify-between",
+            "rounded-xl border-[0.1px] border-teal-200/20",
+            "hover:bg-teal-800/10",
+          ]}
+        >
+          <Link external href={asset.fields.description}>
+            <img
+              src={`https:${asset.fields.file.url}`}
+              alt={`cover-${asset.fields.title}`}
+              class="overflow-hidden rounded-t-xl"
+            />
+            <p class="m-4 text-sm text-neutral-300 line-clamp-2">
+              {asset.fields.title}
+            </p>
+          </Link>
+        </li>
+      ))
+    }
+  </ul>
+  <Pagination
+    previous={page.url.prev}
+    next={page.url.next}
+    pathname="/articles"
+    currentPage={page.currentPage}
+    totalPages={totalPages}
+  />
+</ResourcesLayout>
