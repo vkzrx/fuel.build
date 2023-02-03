@@ -3,7 +3,7 @@ import Avatar from "./Avatar.astro";
 import Link from "./Link.astro";
 import type { Project, Social } from "~/types";
 
-export type Props = Pick<Project, "domains" | "socials"> & {
+export type Props = Pick<Project, "stage" | "domains" | "socials"> & {
   size?: "md";
   title: string;
   description: string;
@@ -12,8 +12,24 @@ export type Props = Pick<Project, "domains" | "socials"> & {
   coverURL: string | undefined;
 };
 
-const { title, description, href, logoURL, coverURL, domains, socials } =
+const { title, description, stage, href, logoURL, coverURL, domains, socials } =
   Astro.props;
+
+const stageIcons: Record<Project["stage"], string | null> = {
+  audit: "/icons/audit.svg",
+  building: "/icons/tools.svg",
+  mvp: "/icons/checklist.svg",
+  live: "/icons/rocket.svg",
+  none: null,
+};
+
+const progressStages: Record<Project["stage"], string | null> = {
+  audit: "In audit",
+  building: "Building",
+  mvp: "MVP",
+  live: "Live (Testnet)",
+  none: null,
+};
 
 const socialIcons: Record<Social["type"], string> = {
   discord: "/icons/discord.svg",
@@ -48,6 +64,24 @@ const socialIcons: Record<Social["type"], string> = {
           )
         }
       </div>
+      {
+        stage !== "none" && (
+          <div
+            class:list={[
+              "absolute top-2 right-2 flex items-center justify-center",
+              "bg-gray-900/40 px-2.5 py-1.5 backdrop-blur-lg text-xs space-x-1.5",
+              "rounded-3xl border-[0.1px] border-teal-200/20",
+            ]}
+          >
+            <img
+              src={stageIcons[stage]}
+              alt={`progress-${stage}`}
+              class="h-5 object-contain"
+            />
+            <span>{progressStages[stage]}</span>
+          </div>
+        )
+      }
       <div
         class="absolute bottom-0 flex h-[80px] w-full items-center space-x-4 px-4"
       >
