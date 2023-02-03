@@ -5,6 +5,7 @@ export const projects: Project[] = [
     name: "Microchain",
     description:
       "A low-cost, easy-to-use token swapping terminal with two major benefits... versatility and simplicity",
+    stage: "audit",
     href: "https://microchain.systems/",
     logoURL: "/logos/microchain.jpeg",
     coverURL: "/covers/microchain.jpeg",
@@ -23,6 +24,7 @@ export const projects: Project[] = [
   {
     name: "Sway Gang",
     description: "We build on Sway. @fuellabs and @CelestiaOrg early adopters",
+    stage: "none",
     href: "https://twitter.com/swaygangsters",
     logoURL: "/logos/sway-gang.jpeg",
     coverURL: "/covers/sway-gang.jpeg",
@@ -42,6 +44,7 @@ export const projects: Project[] = [
     name: "RedStone",
     description:
       "EVM compatible Oracles offering custom, high-frequency, cost-efficient data for DeFi 🔮 | Creators of @warp_contracts on Arweave 🐘",
+    stage: "building",
     href: "https://redstone.finance",
     logoURL: "/logos/redstone-finance.png",
     coverURL: "/covers/redstone-finance.jpeg",
@@ -72,6 +75,7 @@ export const projects: Project[] = [
   {
     name: "SwayLend",
     description: "First ever Lending protocol on Fuel Network",
+    stage: "live",
     href: "https://swaylend.com",
     logoURL: "/logos/sway-lend.png",
     domains: ["DeFi"],
@@ -93,6 +97,7 @@ export const projects: Project[] = [
   {
     name: "Yama Finance",
     description: "Novel Omnichain Stablecoin",
+    stage: "mvp",
     href: "https://twitter.com/YamaFinance",
     logoURL: "/logos/yama-finance.jpeg",
     coverURL: "/covers/yama-finance.jpeg",
@@ -107,6 +112,7 @@ export const projects: Project[] = [
   {
     name: "Poolshark",
     description: "A decentralized protocol for directional liquidity",
+    stage: "building",
     href: "https://docs.poolsharks.io",
     logoURL: "/logos/poolshark.jpeg",
     coverURL: "/covers/poolshark.jpeg",
@@ -134,6 +140,7 @@ export const projects: Project[] = [
     name: "Elix",
     description:
       "Hybrid automated market maker featuring automated concentrated liquidity and delivering additional capital efficiency build on @fuellabs_",
+    stage: "building",
     href: "https://elix.finance",
     logoURL: "/logos/elix.png",
     coverURL: "/covers/elix.jpeg",
@@ -160,6 +167,7 @@ export const projects: Project[] = [
   {
     name: "Thunder",
     description: "Building the first NFT marketplace on Fuel",
+    stage: "building",
     href: "https://thundernft.market",
     logoURL: "/logos/thunder.jpeg",
     coverURL: "/covers/thunder.jpeg",
@@ -186,6 +194,7 @@ export const projects: Project[] = [
   {
     name: "Fuel Art",
     description: "The next Gen NFT Marketplace on Fuel",
+    stage: "building",
     href: "https://fuelart.io",
     logoURL: "/logos/fuel-art.jpeg",
     coverURL: "/covers/fuel-art.jpeg",
@@ -209,6 +218,7 @@ export const projects: Project[] = [
     name: "PlayEstates",
     description:
       "Real Estate Tokenization and Fractionalization! Bridging the digital world to the real world. Powered by Fuel Network",
+    stage: "mvp",
     href: "https://www.playestates.com",
     logoURL: "/logos/playestates.jpg",
     coverURL: "/covers/playestates.jpg",
@@ -240,6 +250,7 @@ export const projects: Project[] = [
     name: "SwayLang",
     description:
       "Sway is a Rust-based, domain specific language for writing smart contracts 🌴 Created by @fuellabs_",
+    stage: "none",
     href: "https://fuellabs.github.io/sway",
     logoURL: "/logos/swaylang.jpeg",
     coverURL: "/covers/swaylang.jpeg",
@@ -263,6 +274,7 @@ export const projects: Project[] = [
     name: "Webgum",
     description:
       "🕸️ An online marketplace where you can buy and sell encrypted files",
+    stage: "building",
     href: "https://twitter.com/webgumapp",
     logoURL: "/logos/webgum.jpeg",
     domains: ["Marketplace"],
@@ -280,6 +292,7 @@ export const projects: Project[] = [
   {
     name: "Unic",
     description: "Verify your NFT by scanning",
+    stage: "building",
     href: "https://unic.io/",
     logoURL: "/logos/unic.jpeg",
     coverURL: "/covers/unic.jpeg",
@@ -307,6 +320,7 @@ export const projects: Project[] = [
     name: "Fuelet",
     description:
       "Self-custodial wallet for the next billion users - Soon on iOS, Android and Chrome",
+    stage: "building",
     href: "https://fuelet.app/",
     logoURL: "/logos/fuelet.png",
     coverURL: "/covers/fuelet.jpeg",
@@ -325,6 +339,7 @@ export const projects: Project[] = [
   {
     name: "Fuel Nomen",
     description: "The next generation blockchain name system",
+    stage: "building",
     href: "https://www.nomen.sh",
     logoURL: "/logos/fuel-nomen.jpeg",
     domains: ["Identity"],
@@ -347,6 +362,7 @@ export const projects: Project[] = [
     name: "Fuel Punks",
     description:
       "1111 dystopian punks ready to conquer the Fastest Modular Execution Layer ",
+    stage: "building",
     href: "https://twitter.com/FuelPunks",
     logoURL: "/logos/fuel-punks.jpeg",
     coverURL: "/covers/fuel-punks.jpeg",
@@ -361,6 +377,7 @@ export const projects: Project[] = [
   {
     name: "Orao",
     description: "Oracle service for custom data feeds",
+    stage: "mvp",
     href: "https://orao.network/",
     logoURL: "/logos/orao.jpeg",
     domains: ["Oracle"],
@@ -387,6 +404,7 @@ export const projects: Project[] = [
     name: "Fuel Global",
     description:
       "Explore #Fuel Ecosystem with us. News, Guides & Featured Projects on @fuellabs_",
+    stage: "none",
     href: "https://twitter.com/FuelGlobal_",
     logoURL: "/logos/fuel-global.jpeg",
     coverURL: "/covers/fuel-global.jpeg",
@@ -402,6 +420,7 @@ export const projects: Project[] = [
     name: "Fuel Ecosystem",
     description:
       "This is a support resource for the @fuellabs_ blockchain project. We will follow the development of the project, the ecosystem and other news.",
+    stage: "none",
     href: "https://twitter.com/FuelEcosystem",
     logoURL: "/logos/fuel-ecosystem.jpeg",
     coverURL: "/covers/fuel-ecosystem.jpeg",
@@ -417,6 +436,7 @@ export const projects: Project[] = [
     name: "Fuel Kits",
     description:
       "FuelKits - is a place where you can see about @fuellabs_ and its ecosystem",
+    stage: "none",
     href: "https://twitter.com/fuelkits",
     logoURL: "/logos/fuel-kits.jpeg",
     coverURL: "/covers/fuel-kits.jpeg",

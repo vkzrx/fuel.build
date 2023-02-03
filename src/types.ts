@@ -23,6 +23,7 @@ export type Social = {
 export type Project = {
   name: string;
   description: string;
+  stage: "audit" | "building" | "live" | "mvp" | "none";
   href: string;
   logoURL: `/logos/${string}`;
   coverURL?: `/covers/${string}`;
