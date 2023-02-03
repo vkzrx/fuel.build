@@ -140,6 +140,10 @@ export const projects: Project[] = [
     domains: ["DeFi"],
     socials: [
       {
+        type: "github",
+        link: "https://github.com/elixfinance",
+      },
+      {
         type: "twitter",
         link: "https://twitter.com/elixfinance",
       },
@@ -147,11 +151,15 @@ export const projects: Project[] = [
         type: "website",
         link: "https://elix.finance",
       },
+      {
+        type: "medium",
+        link: "https://medium.com/@elixfinance",
+      },
     ],
   },
   {
     name: "Thunder",
-    description: "Building the first NFT marketplace on @fuellabs_",
+    description: "Building the first NFT marketplace on Fuel",
     href: "https://thundernft.market",
     logoURL: "/logos/thunder.jpeg",
     coverURL: "/covers/thunder.jpeg",
@@ -162,8 +170,38 @@ export const projects: Project[] = [
         link: "https://twitter.com/ThunderbyFuel",
       },
       {
+        type: "discord",
+        link: "https://discord.gg/thundernftmarket",
+      },
+      {
         type: "website",
         link: "https://thundernft.market/",
+      },
+      {
+        type: "medium",
+        link: "https://medium.com/@ThunderbyFuel",
+      },
+    ],
+  },
+  {
+    name: "Fuel Art",
+    description: "The next Gen NFT Marketplace on Fuel",
+    href: "https://fuelart.io",
+    logoURL: "/logos/fuel-art.jpeg",
+    coverURL: "/covers/fuel-art.jpeg",
+    domains: ["NFT", "Marketplace"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/fuel_art",
+      },
+      {
+        type: "discord",
+        link: "https://discord.gg/BGk5UghWWk",
+      },
+      {
+        type: "website",
+        link: "https://fuelart.io",
       },
     ],
   },
@@ -181,8 +219,20 @@ export const projects: Project[] = [
         link: "https://twitter.com/playestates",
       },
       {
+        type: "discord",
+        link: "https://discord.com/invite/PlayEstates",
+      },
+      {
+        type: "telegram",
+        link: "https://t.me/playestates",
+      },
+      {
         type: "website",
         link: "https://www.playestates.com",
+      },
+      {
+        type: "medium",
+        link: "https://playestates.medium.com",
       },
     ],
   },
@@ -240,6 +290,14 @@ export const projects: Project[] = [
         link: "https://twitter.com/0xUNIC",
       },
       {
+        type: "discord",
+        link: "https://discord.com/invite/wDX4HADQ5b",
+      },
+      {
+        type: "telegram",
+        link: "https://t.me/unic_labs",
+      },
+      {
         type: "website",
         link: "https://unic.io/",
       },
@@ -279,6 +337,10 @@ export const projects: Project[] = [
         type: "website",
         link: "https://www.nomen.sh",
       },
+      {
+        type: "medium",
+        link: "https://fuelnomen.medium.com",
+      },
     ],
   },
   {
@@ -308,8 +370,16 @@ export const projects: Project[] = [
         link: "https://twitter.com/OraoNetwork",
       },
       {
+        type: "telegram",
+        link: "https://t.me/ORAOcommunity",
+      },
+      {
         type: "website",
-        link: "https://orao.network/",
+        link: "https://orao.network",
+      },
+      {
+        type: "medium",
+        link: "https://orao.medium.com",
       },
     ],
   },
@@ -325,6 +395,36 @@ export const projects: Project[] = [
       {
         type: "twitter",
         link: "https://twitter.com/FuelGlobal_",
+      },
+    ],
+  },
+  {
+    name: "Fuel Ecosystem",
+    description:
+      "This is a support resource for the @fuellabs_ blockchain project. We will follow the development of the project, the ecosystem and other news.",
+    href: "https://twitter.com/FuelEcosystem",
+    logoURL: "/logos/fuel-ecosystem.jpeg",
+    coverURL: "/covers/fuel-ecosystem.jpeg",
+    domains: ["Education"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/FuelEcosystem",
+      },
+    ],
+  },
+  {
+    name: "Fuel Kits",
+    description:
+      "FuelKits - is a place where you can see about @fuellabs_ and its ecosystem",
+    href: "https://twitter.com/fuelkits",
+    logoURL: "/logos/fuel-kits.jpeg",
+    coverURL: "/covers/fuel-kits.jpeg",
+    domains: ["Education"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/fuelkits",
       },
     ],
   },
