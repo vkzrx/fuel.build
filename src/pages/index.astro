@@ -7,9 +7,7 @@ import { projects } from "~/../data/projects";
 <MainLayout>
   <div class="flex-grow space-y-2">
     <div class="hidden h-6 text-right text-neutral-400 md:block"></div>
-    <ul
-      class="flex justify-center md:grid md:grid-cols-3 md:gap-4 2xl:grid-cols-4"
-    >
+    <ul class="grid gap-8 px-4 md:grid-cols-3 md:gap-4 md:px-0 2xl:grid-cols-4">
       {
         projects.map((project) => (
           <li>
