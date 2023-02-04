@@ -1,6 +1,6 @@
 ---
 import Footer from "~/components/Footer.astro";
-import Header from "~/components/Header.astro";
+import Header from "~/components/Header";
 ---
 
 <!DOCTYPE html>
@@ -54,7 +54,7 @@ import Header from "~/components/Header.astro";
     />
   </head>
   <body>
-    <Header />
+    <Header client:load />
     <div
       class="h-[1px] bg-gradient-to-r from-[#000d0a] via-teal-200 to-[#000d0a]"
     >
