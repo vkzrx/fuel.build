@@ -17,7 +17,8 @@ const { pathname } = Astro.url;
       <Link
         href={`/articles/1`}
         class:list={[
-          "rounded-md border-[0.1px] border-teal-200/20 px-2 py-1 text-center text-sm capitalize",
+          "px-2.5 py-1.5 text-center capitalize",
+          "rounded-md border-[0.1px] border-teal-200/20",
           {
             "bg-teal-600": pathname.startsWith("/articles"),
           },
@@ -28,7 +29,8 @@ const { pathname } = Astro.url;
       <Link
         href={`/videos/1`}
         class:list={[
-          "rounded-md border-[0.1px] border-teal-200/20 px-2 py-1 text-center text-sm capitalize",
+          "px-2.5 py-1.5 text-center capitalize",
+          "rounded-md border-[0.1px] border-teal-200/20",
           {
             "bg-teal-600": pathname.startsWith("/videos"),
           },
