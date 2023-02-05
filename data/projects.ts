@@ -327,6 +327,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Smart Money",
+    description: "Lending and Borrow protocol on Fuel",
+    stage: "building",
+    href: "https://twitter.com/smartmoney_labs",
+    logoURL: "/logos/smart-money.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/smartmoney_labs",
+      },
+    ],
+  },
+  {
     name: "Fuel Punks",
     description:
       "1111 dystopian punks ready to conquer the Fastest Modular Execution Layer ",
@@ -334,11 +348,43 @@ export const projects: Project[] = [
     href: "https://twitter.com/FuelPunks",
     logoURL: "/logos/fuel-punks.jpeg",
     coverURL: "/covers/fuel-punks.jpeg",
-    domains: ["NFT", "Marketplace"],
+    domains: ["NFT"],
     socials: [
       {
         type: "twitter",
         link: "https://twitter.com/FuelPunks",
+      },
+    ],
+  },
+  {
+    name: "Fuel Monkeys",
+    description:
+      "hoot hoot! monkeys 🐵 are building a jungle-centric web3 SWAYment on fuel  ⛽ 🌴 built for degens, swayoors & fueloors",
+    stage: "building",
+    href: "https://twitter.com/FuelMonkeys",
+    logoURL: "/logos/fuel-monkeys.jpeg",
+    coverURL: "/covers/fuel-monkeys.jpeg",
+    domains: ["NFT"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/FuelMonkeys",
+      },
+    ],
+  },
+  {
+    name: "Bald Boyz NFT",
+    description:
+      "Celebrating your true self. Join the #Fuel movement and embrace yourself with confidence.",
+    stage: "building",
+    href: "https://twitter.com/BaldBoyzOnFuel",
+    logoURL: "/logos/bald-boyz.jpeg",
+    coverURL: "/covers/bald-boyz.jpeg",
+    domains: ["NFT"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/BaldBoyzOnFuel",
       },
     ],
   },
