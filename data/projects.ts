@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: "Microchain",
     description:
-      "A low-cost, easy-to-use token swapping terminal with two major benefits... versatility and simplicity",
+      "A low-cost, easy-to-use token swapping terminal with two major benefits: versatility and simplicity",
     stage: "audit",
     href: "https://microchain.systems/",
     logoURL: "/logos/microchain.jpeg",
