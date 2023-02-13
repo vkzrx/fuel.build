@@ -63,6 +63,38 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Acumen",
+    description:
+      "Providing sustainable yields for users whilst empowering emerging economies",
+    stage: "building",
+    href: "https://acumen.network",
+    logoURL: "/logos/acumen.jpeg",
+    coverURL: "/covers/acumen.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/acumenofficial",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/UXDnngxRmn",
+      },
+      {
+        type: "telegram",
+        link: "https://t.me/AcumenOfficial",
+      },
+      {
+        type: "website",
+        link: "https://acumen.network",
+      },
+      {
+        type: "medium",
+        link: "https://acumenofficial.medium.com",
+      },
+    ],
+  },
+  {
     name: "Yama Finance",
     description: "Novel Omnichain Stablecoin",
     stage: "mvp",
@@ -235,6 +267,25 @@ export const projects: Project[] = [
       {
         type: "website",
         link: "https://fuellabs.github.io/sway",
+      },
+    ],
+  },
+  {
+    name: "Sway by example",
+    description: "Library for compiled sway programs",
+    stage: "none",
+    href: "https://github.com/calldelegation/sway-by-example-lib",
+    logoURL: "/logos/sway-by-example.jpeg",
+    coverURL: "/covers/sway-by-example.jpeg",
+    domains: ["Tooling"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/calldelegation",
+      },
+      {
+        type: "github",
+        link: "https://github.com/calldelegation/sway-by-example-lib",
       },
     ],
   },
