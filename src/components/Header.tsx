@@ -51,16 +51,6 @@ function Header() {
               Resources
             </a>
           </li>
-          <li>
-            <a
-              href="https://github.com/0xYami/fuel.build/tree/main/docs/fill-up-gas-station.md"
-              target="_blank"
-              rel={"noopener noreferrer"}
-              class="text-lg"
-            >
-              Join
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -120,19 +110,6 @@ function MobileNav(props: { isOpen: boolean; close: () => void }) {
             ])}
           >
             Resources
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/0xYami/fuel.build/tree/main/docs/fill-up-gas-station.md"
-            target="_blank"
-            rel={"noopener noreferrer"}
-            class={clsx([
-              "flex h-14 w-full items-center justify-center text-xl",
-              "border-b-[0.1px] border-b-teal-200/20",
-            ])}
-          >
-            Join
           </a>
         </li>
       </ul>
