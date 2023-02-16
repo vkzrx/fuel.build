@@ -60,6 +60,10 @@ export const projects: Project[] = [
         type: "website",
         link: "https://swaylend.com",
       },
+      {
+        type: "medium",
+        link: "https://medium.com/@swaygang",
+      },
     ],
   },
   {
@@ -107,6 +111,18 @@ export const projects: Project[] = [
         type: "twitter",
         link: "https://twitter.com/YamaFinance",
       },
+      {
+        type: "github",
+        link: "https://github.com/yama-finance",
+      },
+      {
+        type: "website",
+        link: "https://yama.finance",
+      },
+      {
+        type: "medium",
+        link: "https://medium.com/@yamafinance",
+      },
     ],
   },
   {
@@ -133,6 +149,29 @@ export const projects: Project[] = [
       {
         type: "website",
         link: "https://docs.poolsharks.io",
+      },
+    ],
+  },
+  {
+    name: "Tau Protocol",
+    description: "Building the native decentralized exchange on Fuel",
+    stage: "building",
+    href: "https://twitter.com/TauProtocol_",
+    logoURL: "/logos/tau-protocol.jpeg",
+    coverURL: "/covers/tau-protocol.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "github",
+        link: "https://github.com/tau-protocol",
+      },
+      {
+        type: "twitter",
+        link: "https://twitter.com/TauProtocol_",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/g3eqZsA39z",
       },
     ],
   },
@@ -372,6 +411,10 @@ export const projects: Project[] = [
         link: "https://www.nomen.sh",
       },
       {
+        type: "github",
+        link: "https://github.com/fuelnomen",
+      },
+      {
         type: "medium",
         link: "https://fuelnomen.medium.com",
       },
@@ -454,6 +497,10 @@ export const projects: Project[] = [
       {
         type: "telegram",
         link: "https://t.me/ORAOcommunity",
+      },
+      {
+        type: "github",
+        link: "https://github.com/orao-network",
       },
       {
         type: "website",
