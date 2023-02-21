@@ -248,6 +248,10 @@ export const projects: Project[] = [
         link: "https://discord.gg/BGk5UghWWk",
       },
       {
+        type: "telegram",
+        link: "https://t.me/fuelart",
+      },
+      {
         type: "website",
         link: "https://fuelart.io",
       },
@@ -379,7 +383,7 @@ export const projects: Project[] = [
     description:
       "Self-custodial wallet for the next billion users - Soon on iOS, Android and Chrome",
     stage: "building",
-    href: "https://fuelet.app/",
+    href: "https://fuelet.app",
     logoURL: "/logos/fuelet.png",
     coverURL: "/covers/fuelet.jpeg",
     domains: ["Wallet"],
@@ -389,8 +393,30 @@ export const projects: Project[] = [
         link: "https://twitter.com/FueletWallet",
       },
       {
+        type: "github",
+        link: "https://github.com/fuelet",
+      },
+      {
         type: "website",
         link: "https://fuelet.app",
+      },
+    ],
+  },
+  {
+    name: "Fuel Wallet",
+    description: "Offical Fuel wallet developed by Fuel labs",
+    stage: "building",
+    href: "https://wallet.fuel.network",
+    logoURL: "/logos/fuel-wallet.png",
+    domains: ["Wallet"],
+    socials: [
+      {
+        type: "github",
+        link: "https://github.com/fuellabs/fuels-wallet",
+      },
+      {
+        type: "website",
+        link: "https://wallet.fuel.network",
       },
     ],
   },
@@ -417,6 +443,21 @@ export const projects: Project[] = [
       {
         type: "medium",
         link: "https://fuelnomen.medium.com",
+      },
+    ],
+  },
+  {
+    name: "Fuel Identity",
+    description: "Building identity on Fuel",
+    stage: "building",
+    href: "https://twitter.com/fuelidentity",
+    logoURL: "/logos/fuel-identity.jpeg",
+    coverURL: "/covers/fuel-identity.jpeg",
+    domains: ["Identity"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/fuelidentity",
       },
     ],
   },
