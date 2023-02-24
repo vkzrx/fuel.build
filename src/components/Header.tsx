@@ -7,7 +7,7 @@ function Header() {
   const [open, setOpen] = createSignal(false);
   const pathname = isServer ? "" : location.pathname;
   return (
-    <header class="z-2 w-full bg-[#000d0a]">
+    <header class="z-2 w-full bg-[#000814]">
       <MobileNav isOpen={open()} close={() => setOpen(false)} />
       <nav class="flex h-[60px] items-center justify-between px-4 md:px-32 2xl:px-44">
         <a href="/">
