@@ -19,7 +19,9 @@ import BaseLayout from "./BaseLayout.astro";
     </p>
   </section>
   <section class="flex md:space-x-4 2xl:space-x-10">
-    <Sidebar />
+    <div class="sticky top-0 flex h-screen pt-8">
+      <Sidebar />
+    </div>
     <slot />
   </section>
 </BaseLayout>
