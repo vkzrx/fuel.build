@@ -572,6 +572,26 @@ export const projects: Project[] = [
   {
     name: "Fuel Ecosystem",
     description:
+      "Stay informed about @fuellabs_ advancements, and stay ahead in Fuel ecosystem. The center of Fuel || Open Source",
+    stage: "none",
+    href: "https://fuelecosystem.netlify.app",
+    logoURL: "/logos/fuel-ecos.jpeg",
+    coverURL: "/covers/fuel-ecos.jpeg",
+    domains: ["Education"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/FuelEcos",
+      },
+      {
+        type: "website",
+        link: "https://fuelecosystem.netlify.app",
+      },
+    ],
+  },
+  {
+    name: "Fuel Ecosystem",
+    description:
       "This is a support resource for the @fuellabs_ blockchain project. We will follow the development of the project, the ecosystem and other news.",
     stage: "none",
     href: "https://twitter.com/FuelEcosystem",
