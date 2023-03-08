@@ -314,17 +314,17 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Sway by example",
-    description: "Library for compiled sway programs",
+    name: "Sway by Example",
+    description: "an introduction to Sway with simple examples",
     stage: "none",
-    href: "https://github.com/calldelegation/sway-by-example-lib",
-    logoURL: "/logos/sway-by-example.jpeg",
+    href: "https://www.swaybyexample.com/",
+    logoURL: "/logos/sway-by-example.png",
     coverURL: "/covers/sway-by-example.jpeg",
-    domains: ["Tooling"],
+    domains: ["Tooling", "Education"],
     socials: [
       {
-        type: "twitter",
-        link: "https://twitter.com/calldelegation",
+        type: "website",
+        link: "https://www.swaybyexample.com/",
       },
       {
         type: "github",
