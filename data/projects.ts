@@ -67,6 +67,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "FuFi",
+    description:
+      "FuFi is a next-generation cryptocurrency aggregator build on the @fuel_network , designed to offer users a one-stop-shop for all their cryptocurrency needs.",
+    stage: "building",
+    href: "https://twitter.com/fufinance",
+    logoURL: "/logos/fufi.jpeg",
+    coverURL: "/covers/fufi.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/fufinance",
+      },
+    ],
+  },
+  {
     name: "Acumen",
     description:
       "Providing sustainable yields for users whilst empowering emerging economies",
@@ -227,6 +243,37 @@ export const projects: Project[] = [
       {
         type: "medium",
         link: "https://medium.com/@ThunderbyFuel",
+      },
+    ],
+  },
+  {
+    name: "Redstone Oracles",
+    description: "Building the first NFT marketplace on Fuel",
+    stage: "building",
+    href: "https://redstone.finance",
+    logoURL: "/logos/redstone-finance.png",
+    coverURL: "/covers/redstone-finance.jpeg",
+    domains: ["DeFi", "Oracle"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/redstone_defi",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/PVxBZKFr46",
+      },
+      {
+        type: "github",
+        link: "https://github.com/redstone-finance",
+      },
+      {
+        type: "website",
+        link: "https://redstone.finance",
+      },
+      {
+        type: "telegram",
+        link: "https://t.me/redstonefinance",
       },
     ],
   },
