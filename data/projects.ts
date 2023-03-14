@@ -115,6 +115,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Fluid Protocol",
+    description:
+      "Fluid Protocol is a decentralized stablecoin + borrow/lend protocol inspired by Liquity, written in Sway.",
+    stage: "building",
+    href: "https://twitter.com/Fluid_Protocol",
+    logoURL: "/logos/fluid.jpeg",
+    coverURL: "/covers/fluid.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/Fluid_Protocol",
+      },
+    ],
+  },
+  {
     name: "Yama Finance",
     description: "Novel Omnichain Stablecoin",
     stage: "mvp",
