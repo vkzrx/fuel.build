@@ -571,6 +571,26 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Buildogs",
+    description:
+      "OG Community token. #Memedling — Memeing and buidling on @fuel_network",
+    stage: "building",
+    href: "https://twitter.com/BuildogsOnFuel",
+    logoURL: "/logos/buildogs.jpeg",
+    coverURL: "/covers/buildogs.jpeg",
+    domains: ["NFT"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/BuildogsOnFuel",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/4mVQGHUP6a",
+      },
+    ],
+  },
+  {
     name: "Bald Boyz NFT",
     description:
       "Celebrating your true self. Join the #Fuel movement and embrace yourself with confidence.",
