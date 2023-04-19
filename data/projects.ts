@@ -41,6 +41,37 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Spark",
+    description: "Central limit order book",
+    stage: "building",
+    href: "https://allspark.gg",
+    logoURL: "/logos/spark.jpeg",
+    coverURL: "/covers/spark.jpeg",
+    domains: ["DeFi"],
+    socials: [
+      {
+        type: "website",
+        link: "https://allspark.gg",
+      },
+      {
+        type: "github",
+        link: "https://github.com/compolabs/spark",
+      },
+      {
+        type: "twitter",
+        link: "https://twitter.com/allsparkgg",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/hCDd3kVbE7",
+      },
+      {
+        type: "medium",
+        link: "https://medium.com/@swaygang",
+      },
+    ],
+  },
+  {
     name: "SwayLend",
     description: "First ever Lending protocol on Fuel Network",
     stage: "live",
