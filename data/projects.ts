@@ -22,21 +22,26 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Sway Gang",
-    description: "We build on Sway. @fuellabs and @CelestiaOrg early adopters",
-    stage: "none",
-    href: "https://twitter.com/swaygangsters",
-    logoURL: "/logos/sway-gang.jpeg",
-    coverURL: "/covers/sway-gang.jpeg",
+    name: "Composability labs",
+    description:
+      "Modularity maxis, @swaylang , @fuel_network and @CelestiaOrg early adopters",
+    stage: "building",
+    href: "https://twitter.com/compolabs",
+    logoURL: "/logos/compolabs.jpeg",
+    coverURL: "/covers/compolabs.jpeg",
     domains: ["DeFi", "Tooling"],
     socials: [
       {
         type: "twitter",
-        link: "https://twitter.com/swaygangsters",
+        link: "https://twitter.com/compolabs",
       },
       {
         type: "github",
-        link: "https://github.com/sway-gang",
+        link: "https://github.com/compolabs",
+      },
+      {
+        type: "discord",
+        link: "https://discord.com/invite/MmV4ZV8JmF",
       },
     ],
   },
