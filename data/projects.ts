@@ -505,10 +505,10 @@ export const projects: Project[] = [
     name: "Fuelet",
     description:
       "Self-custodial wallet for the next billion users - Soon on iOS, Android and Chrome",
-    stage: "building",
+    stage: "live",
     href: "https://fuelet.app",
     logoURL: "/logos/fuelet.png",
-    coverURL: "/covers/fuelet.jpeg",
+    coverURL: "/covers/fuelet.png",
     domains: ["Wallet"],
     socials: [
       {
