@@ -299,6 +299,30 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Helixa TCG",
+    description:
+      "The next evolution of trading card games. Engaging gameplay mechanics, constantly expanding content and lore, and a community-driven economy.",
+    stage: "building",
+    href: "https://www.helixatcg.com",
+    logoURL: "/logos/helixa-tcg.jpeg",
+    coverURL: "/covers/helixa-tcg.jpeg",
+    domains: ["GameFi"],
+    socials: [
+      {
+        type: "twitter",
+        link: "https://twitter.com/helixatcg",
+      },
+      {
+        type: "discord",
+        link: "https://discord.gg/D5bNRQ9zhG",
+      },
+      {
+        type: "website",
+        link: "https://www.helixatcg.com",
+      },
+    ],
+  },
+  {
     name: "Redstone Oracles",
     description: "Building the first NFT marketplace on Fuel",
     stage: "building",
