@@ -324,7 +324,8 @@ export const projects: Project[] = [
   },
   {
     name: "Redstone Oracles",
-    description: "Building the first NFT marketplace on Fuel",
+    description:
+      "Modular Oracles delivering cost-efficient data for DeFi to EVM L1s & L2s 🔮",
     stage: "building",
     href: "https://redstone.finance",
     logoURL: "/logos/redstone-finance.png",
